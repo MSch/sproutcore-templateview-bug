@@ -1,7 +1,1 @@
-=============================================================================
-Project:   Hans
-Copyright: ©2011 My Company, Inc.
-=============================================================================
-
-TODO: Describe Your Project
-
+Use latest released sproutcore gem, start sc-server, navigate to http://localhost:4020/hans

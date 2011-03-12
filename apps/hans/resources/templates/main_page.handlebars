@@ -1,0 +1,6 @@
+<b>Test</b>
+<p>I've been able to reproduce this bug with sc 1.5.0.pre.4.1 and with sc master up to 3499a6e43eb6b95366e5a3c20c36eb9cd7bd4365</p>
+<p>Clicking the link calls the mouseDown event which calls <code>evt.preventDefault()</code> and <code>evt.stopPropagation()</code>, and should stop the page from navigating away. Unfortunaly it doesn't work</p>
+<p>I can reproduce the bug in Chrome 10 and Firefox 3.6.16.</p>
+<p>To complicate things, in Chrome 10 (but not in FF with Firebug), setting a breakpoint in the mouseDown handler, then resuming executing without any other changes makes the app behave as expected.</p>
+<a href="/we-shouldnt-go-here">CLICK TO DEMONSTRATE</a>
